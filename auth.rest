@@ -1,0 +1,26 @@
+POST http://localhost:9000/auth/signup
+Content-Type: application/json
+
+{
+    "firstName": "jaswinder",
+    "lastName": "chawala",
+    "dob": "1995-04-01",
+    "userName": "jassi@ex2india.com",
+    "password": "Abc@1234"
+}
+
+###
+
+
+POST http://localhost:9000/auth/signin
+Content-Type: application/json
+
+{
+    "userName": "jassi@ex2india.com",
+    "password": "Abc@1234"
+}
+
+###
+
+GET http://localhost:9000/user/details
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWJkZjY2NmFlZTU5MmM4YWZhNDAzOSIsImZpcnN0TmFtZSI6Imphc3dpbmRlciIsImxhc3ROYW1lIjoiY2hhd2FsYSIsInVzZXJOYW1lIjoiamFzc2lAZXgyaW5kaWEuY29tIiwiaWF0IjoxNjQ1OTk1MTYxfQ.ALk3JJan4gNCeqLHt5uHnqP4tMfRRsDuGHC2B4OReCM
